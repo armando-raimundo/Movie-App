@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Movie-App
+Catálogo de filmes moderno desenvolvido com React, Next.js e TypeScript. Consumo da API TheMovieDB (TMDB) utilizando Axios com paginação, filtros e design responsivo.
 
-## Getting Started
+# 🎬 Movie App - Catálogo de Filmes
 
-First, run the development server:
+Uma aplicação web moderna para exploração de filmes e séries, que consome os dados em tempo real da API do [TheMovieDB (TMDB)](https://themoviedb.org). Projeto desenvolvido com foco em boas práticas de programação, tipagem estática e performance.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Tecnologias Utilizadas
+
+* **React** & **Next.js** (App Router) — Estrutura e renderização otimizada.
+* **TypeScript** — Tipagem estática para maior segurança e manutenção do código.
+* **Axios** — Cliente HTTP para consumo da API com instâncias configuradas.
+* **Tailwind CSS** — Estilização rápida, moderna e totalmente responsiva.
+
+## ✨ Funcionalidades Principais
+
+* **Consumo de API em Tempo Real**: Listagem de filmes populares, tendências e próximas estreias.
+* **Procura Avançada**: Filtro de filmes por título, género ou ano de lançamento.
+* **Detalhes do Filme**: Página exclusiva com sinopse, nota técnica, elenco e trailers.
+* **Componentização Limpa**: Código modularizado para reaproveitamento de componentes.
+* **Tratamento de Erros**: Gestão de estados de carregamento (*loading*) e falhas de rede com Axios.
+
+## 🛠️ Como Executar o Projeto
+
+### Pré-requisitos
+Antes de começar, precisa de ter instalado: [Node.js](https://nodejs.org) e uma chave de API do TMDB.
+
+### Passo a Passo
+
+1. **Clonar o repositório**
+   ```bash
+   git clone https://github.com
+   cd NOME_DO_REPOSITORIO
+   ```
+
+2. **Instalar as dependências**
+   ```bash
+   npm install
+   ```
+
+3. **Configurar as Variáveis de Ambiente**
+   Crie um ficheiro `.env.local` na raiz do projeto e adicione a sua chave do TMDB:
+   ```env
+   NEXT_PUBLIC_TMDB_API_KEY=sua_chave_aqui
+   NEXT_PUBLIC_TMDB_BASE_URL=https://themoviedb.org
+   ```
+
+4. **Iniciar o servidor de desenvolvimento**
+   ```bash
+   npm run dev
+   ```
+   Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
+
+## 📂 Estrutura do Projeto 
+```text
+
+├── components/  # Componentes reutilizáveis (Card, Navbar, etc.)
+├── services/    # Configuração do Axios e chamadas à API
+├── types/       # Interfaces e Types do TypeScript
+└── app/         # Páginas e rotas do Next.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+💡 *Projeto desenvolvido para portefólio pessoal.*
