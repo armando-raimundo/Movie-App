@@ -51,7 +51,7 @@ Antes de começar, precisa de ter instalado: [Node.js](https://nodejs.org) e uma
    ```
    Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-## 📂 Estrutura do Projeto (Opcional)
+## 📂 Estrutura do Projeto 
 ```text
 
 ├── components/  # Componentes reutilizáveis (Card, Navbar, etc.)
